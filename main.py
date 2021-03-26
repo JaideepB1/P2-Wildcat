@@ -1,6 +1,10 @@
 from flask import Flask, render_template
-from Website import y2021_bp
-
+from y2021 import y2021_bp
+from y2021.prep import y2021_prep_bp
+from y2021.tri1 import y2021_tri1_bp
+from y2021.tri2 import y2021_tri2_bp
+from y2021.tri3 import y2021_tri3_bp
+from algorithm.app import algorithm_bp
 
 app = Flask(__name__)
 app.register_blueprint(y2021_bp, url_prefix='/y2021/repos')
